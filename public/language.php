@@ -1,0 +1,2 @@
+<?php
+require_once dirname(__DIR__).'/app/bootstrap.php';if($_SERVER['REQUEST_METHOD']!=='POST')redirect(app_path('index.php'));verify_csrf();$lang=(string)($_POST['language']??'en');if(!in_array($lang,['en','hi','bn'],true))$lang='en';$_SESSION['language']=$lang;if(current_user())db()->prepare('UPDATE users SET preferred_language=:l WHERE id=:id')->execute([':l'=>$lang,':id'=>current_user_id()]);redirect(local_return_url((string)($_POST['return_to']??'index.php')));

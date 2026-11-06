@@ -1,0 +1,17 @@
+{
+  "name": "LocalGuide 5.0 — City Discovery",
+  "short_name": "LocalGuide",
+  "description": "Discover local businesses, places, community and neighbourhood experiences.",
+  "start_url": "/index.php",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f5ef",
+  "theme_color": "#10251c",
+  "categories": ["travel", "lifestyle", "shopping"],
+  "icons": [
+    {"src":"/assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"/assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"},
+    {"src":"/assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}
+  ]
+}

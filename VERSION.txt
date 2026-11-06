@@ -1,0 +1,2 @@
+LocalGuide 5.0.0
+Additive migration from 4.0.2; existing listings, members, reviews, uploads and private admin portal are preserved.
